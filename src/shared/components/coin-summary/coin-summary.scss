@@ -1,0 +1,50 @@
+@import 'src/styles/_index.scss';
+
+.asset-summary-container {
+  display: flex;
+  height: 46px;
+  color: 17181b;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #f4f5f5;
+
+  &:nth-child(2n) {
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    background-color: #c1c0ec;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    height: auto;
+    padding: 12px;
+    align-items: flex-start;
+
+    .name,
+    .pair,
+    .market-cap,
+    .average-last-price {
+      display: flex;
+      margin: 12px 0;
+      white-space: nowrap;
+
+      .label {
+        font-weight: bold;
+        margin-right: 8px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .label {
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+}

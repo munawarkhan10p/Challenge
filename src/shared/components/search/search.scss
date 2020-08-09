@@ -1,0 +1,15 @@
+@import 'src/styles/index';
+
+.search-container {
+  position: relative;
+
+  .search {
+    min-width: 250px;
+    padding: 12px;
+    padding-left: 26px;
+    border: 2px solid #165184;
+    background-color: #ffffff;
+    border-radius: 12px;
+    color: #17181b;
+  }
+}

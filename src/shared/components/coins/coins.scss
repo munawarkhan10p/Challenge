@@ -1,0 +1,51 @@
+@import 'src/styles/_index.scss';
+
+.coins {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .header {
+    display: flex;
+    height: 40px;
+    background-color: rgb(3, 45, 80);
+    border-radius: 14px;
+    color: #ffffff;
+    align-items: center;
+    margin-top: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    @include mobile {
+      display: none;
+    }
+
+    .name,
+    .pair,
+    .market-cap,
+    .average-last-price {
+      font-weight: bold;
+    }
+  }
+
+  .name,
+  .pair,
+  .market-cap,
+  .average-last-price {
+    text-align: left;
+    padding: 0 8px;
+  }
+
+  .name,
+  .pair {
+    width: 20%;
+  }
+
+  .market-cap {
+    width: 25%;
+  }
+
+  .average-last-price {
+    flex: 1;
+  }
+}
