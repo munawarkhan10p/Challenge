@@ -10,7 +10,7 @@ export enum Currenttype {
 interface GereralProps {
   type: Currenttype;
 }
-
+  
 
 function General( value: GereralProps ): JSX.Element {
 
